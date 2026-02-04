@@ -10,13 +10,6 @@ import java.util.List;
 public class ProductSpringApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(ProductSpringApplication.class, args);
-
-		ProductService service = context.getBean(ProductService.class);
-
-		List<Product> products = service.getAllProducts();
-			for(Product p: products) {
-			System.out.println(p);
-		}
+		SpringApplication.run(ProductSpringApplication.class, args);
 	}
 }
